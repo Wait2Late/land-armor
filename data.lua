@@ -43,7 +43,7 @@ local recipe =
   name = "land-armor",
   enabled = true,
   energy_required = 2, -- time to craft in seconds (at crafting speed 1)
-  ingredients = { "steel-plate", 5 },
+  ingredients = {{"copper-plate", 1}, {"iron-plate", 1}},
   result = "land-armor"
 }
 
