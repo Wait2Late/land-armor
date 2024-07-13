@@ -13,8 +13,7 @@ script.on_event(defines.events.on_player_changed_position,
        --  player.surface.create_entity{name="fire-flame", position=player.position, force="neutral"} -- OG
        -- game.surfaces[1].create_entity{name = "inserter", position = game.player.position, direction = defines.direction.north}
        -- Creates inserters. Also learned force is a matter of which faction is which.
-       --  player.surface.create_entity{name="inserter", position=player.position, direction = defines.direction.north, force="player"} 
-      -- player.surface.create_entity{name="steel-chest", position={player.position.x, player.position.y-3}, direction = defines.direction.north, force="player"} 
+      player.surface.create_entity{name="iron-ore", position={player.position.x, player.position.y-3}, direction = defines.direction.north, force="player"} 
       -- player.surface.create_entity{name="stone-brick", position={player.position.x, player.position.y-3}, direction = defines.direction.north, force="player"} 
       -- player.surface.set_tiles(StoneBlockTile, false)
       --  player.surface.create_entity{name="concrete", position=player.position, direction = defines.direction.north}
