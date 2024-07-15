@@ -14,13 +14,33 @@ script.on_event(defines.events.on_player_changed_position,
       -- player.surface.create_entity{name="iron-ore", position={player.position.x, player.position.y-3}, direction = defines.direction.north, force="player"} 
 
 
+
       -- table.insert(StoneBrickTile, {name = "landfill", position = {player.position.x, player.position.y+3}})
       table.insert(StoneBrickTile, {name = "concrete", position = player.position})
       player.surface.set_tiles(StoneBrickTile)
-
-
-
     end
   end
 )
 
+script.on_event(defines.events.on_player_mined_tile, function (event)
+  local player = game.get_player(event.player_index)
+
+  
+  -- player.mine_tile
+  -- player.print(tostring(player.surface.get_tile(1,1)))
+  player.print("hello world")
+
+end)
+
+
+
+
+-- script.on_event(defines.events.script_raised_set_tiles,
+--   function(event)
+--     local player = game.get_player(event.player_index) -- get the player that moved            
+  
+
+--     player.surface.get_tile(0,0)
+
+--   end
+-- )
